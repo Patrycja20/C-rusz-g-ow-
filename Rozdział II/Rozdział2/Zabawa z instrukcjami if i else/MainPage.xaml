@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Zabawa_z_instrukcjami_if_i_else.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Zabawa_z_instrukcjami_if_i_else"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="changeText" Content="Kliknięcie zmienia etykietę" HorizontalAlignment="Center" FontSize="20" Click="changeText_Click"/>
+        <CheckBox x:Name="enableCheckbox" Content="Włącza zmianę etykiety" Grid.Column="1" HorizontalAlignment="Center" FontSize="20"/>
+        <TextBlock x:Name="labelToChange" Grid.Row="1" TextWrapping="Wrap" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold">
+        	<Run Text="Naciśnij przycisk, aby zmienić tekst"/>
+        </TextBlock>
+
+    </Grid>
+</Page>
